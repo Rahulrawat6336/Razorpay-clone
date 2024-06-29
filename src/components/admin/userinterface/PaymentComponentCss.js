@@ -1,9 +1,9 @@
 import { makeStyles } from "@mui/styles"
 import { hover } from "@testing-library/user-event/dist/hover"
-export const useStyle= makeStyles({
+export const useStyles= makeStyles({
     root:{ display:'',
         justifyContent:'center',
-        height:'80%',
+        height:'90%',
         width:'80%',
         alignItems:'center',
         background:'white'
@@ -78,7 +78,7 @@ export const useStyle= makeStyles({
 
 // import { makeStyles } from "@mui/styles";
 
-// const useStyles = makeStyles({
+// export const useStyles = makeStyles({
 //   root: {
 //     display: 'flex',
 //     justifyContent: 'center',
@@ -124,20 +124,20 @@ export const useStyle= makeStyles({
 //     transition: 'opacity 0.5s ease-in-out', // Added transition for smooth visibility change
 //   },
 
-//   card:hover {
+//   card:{'&:hover': {
 //     cursor: 'pointer', // Hover effect now applied directly to the card element
-//   },
+//   }},
 
-//   card:hover .intro {
+//   card:{'&:hover $intro': {
 //     height: 220,
 //     bottom: 240,
 //     background: 'black',
-//   },
+//   }},
 
-//   card:hover .p {
+//   card:{'&:hover $p': {
 //     opacity: 1,
 //     visibility: 'visible',
-//   },
+//   }},
 // });
 
-// export default useStyles;
+

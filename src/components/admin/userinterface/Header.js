@@ -6,7 +6,16 @@ import Toolbar from '@mui/material/Toolbar';
 import Logo from '../../../assests/logo.webp'
 import Flag from '../../../assests/flag.svg'
 import { Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
+
+
+export default function Header() {
+
+  var navigate =useNavigate()
+
+
+  
  var name =['Payments','Banking+','Payroll','Partners','Resources','Support','Pricing']
 
  const  header=()=>{
@@ -20,8 +29,13 @@ import { Button } from '@mui/material';
     })
  }
 
+ const handleClick=()=>{
+  navigate('/signin')
+ }
 
-export default function Header() {
+
+
+
     return (
         <Box sx={{ flexGrow: 5, position: 'relative',background:'#F0F5FF' }}  style={{background:'#F0F5FF'}}>
           <AppBar style={{ background: '#F0F5FF',opacity:.9,height:85 }} position="static">
@@ -35,7 +49,7 @@ export default function Header() {
                   <div style={{ display: 'flex', flexDirection: 'row',whiteSpace:'nowrap', justifyContent: 'center', alignItems: 'center', }}>
                   <img  src={Flag} sizes='small' style={{ width:30 ,marginLeft:150}} />
                   <span style={{color:'blue',marginLeft:19}}>Log In</span>
-                  <Button variant='contained' style={{color:'',marginLeft:22}}>Sign Up</Button>
+                  <Button onClick={handleClick} variant='contained' style={{color:'',marginLeft:22}}>Sign Up</Button>
                    
                   </div>
                 
