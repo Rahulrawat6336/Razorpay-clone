@@ -1,6 +1,14 @@
 import { Grid, TextField, Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 export default function SignInDetail() {
+
+    var navigate = useNavigate()
+
+    const handleClick=()=>{
+
+        navigate('/dashboard')
+    }
 
 
     return (
@@ -20,6 +28,7 @@ export default function SignInDetail() {
             </Grid>
             <Grid item xs={12} style={{ display: 'flex', marginTop: -115, whiteSpace: 'nowrap', flexDirection: 'column' }}>
                 <TextField
+                required
 
                     id="outlined-required"
                     label="Email address"
@@ -30,6 +39,7 @@ export default function SignInDetail() {
             </Grid>
             <Grid item xs={12} style={{ display: 'flex', marginTop: -195, whiteSpace: 'nowrap' }}>
                 <TextField
+                required
 
                     id="outlined-required"
                     label="Password"
@@ -38,7 +48,7 @@ export default function SignInDetail() {
                 />
             </Grid>
             <Grid item xs={12}>
-                <Button variant="contained" style={{ background: "black", height: 50, marginTop: -335 }} fullWidth>Sign in</Button>
+                <Button onClick={handleClick} variant="contained" style={{ background: "black", height: 50, marginTop: -335 }} fullWidth>Sign in</Button>
             </Grid>
         </Grid> 
        

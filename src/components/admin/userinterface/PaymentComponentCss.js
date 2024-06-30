@@ -73,6 +73,73 @@ export const useStyles= makeStyles({
     // card:
 
     // card:
+
+
+    root1:{ display:'',
+        justifyContent:'center',
+        height:'100%',
+        width:'100%',
+        alignItems:'center',
+        background:'white',
+        marginTop:'-15%',
+        marginLeft:55
+       
+
+    },
+    
+    container1:{
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center',
+         height:'100%',
+        width:'100%',
+    },
+
+    card1:{
+        height:'auto',
+        width:'auto',
+        margin:50,
+        // boxShadow: '5px 5px 8px whitesmoke',
+        overflow:'hidden',
+        position:'relative',
+        top:0,
+        hover :{
+            cursor:'pointer',
+    
+        },
+
+       
+
+    },
+    intro1:{
+        height:110,
+        width:350,
+        padding:6,
+        // boxSizing:'border-box',
+        position:'relative',
+        bottom:110,
+        background:'',
+        color:'green',
+        transition:.5,
+
+        hover:{
+            height:220,
+            bottom:240,
+            background:'black',
+    
+        },
+    },
+    h11:{
+        margin:5,
+        fontSize:30
+
+    },
+    h21:{
+        margin:1,
+        fontSize:16,
+        color:'white'
+
+    },
 })
 
 
